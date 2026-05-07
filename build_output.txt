@@ -1,0 +1,24 @@
+
+> smart-design-vault@0.1.0 build
+> NODE_ENV=production next build
+
+   ▲ Next.js 15.5.9
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 7.2s
+   Linting and checking validity of types ...
+ ⨯ ESLint: Converting circular structure to JSON     --> starting at object with constructor 'Object'     |     property 'configs' -> object with constructor 'Object'     |     property 'flat' -> object with constructor 'Object'     |     ...     |     property 'plugins' -> object with constructor 'Object'     --- property 'react' closes the circle Referenced from: /home/austin/Downloads/smart-design-vault/.eslintrc.json
+Failed to compile.
+
+./src/components/ui/calendar.tsx:57:9
+Type error: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+
+[0m [90m 55 |[39m       }}
+ [90m 56 |[39m       components[33m=[39m{{
+[31m[1m>[22m[39m[90m 57 |[39m         [33mIconLeft[39m[33m:[39m ({ [33m...[39mprops }) [33m=>[39m [33m<[39m[33mChevronLeft[39m className[33m=[39m[32m"h-4 w-4"[39m [33m/[39m[33m>[39m[33m,[39m
+ [90m    |[39m         [31m[1m^[22m[39m
+ [90m 58 |[39m         [33mIconRight[39m[33m:[39m ({ [33m...[39mprops }) [33m=>[39m [33m<[39m[33mChevronRight[39m className[33m=[39m[32m"h-4 w-4"[39m [33m/[39m[33m>[39m[33m,[39m
+ [90m 59 |[39m       }}
+ [90m 60 |[39m       {[33m...[39mprops}[0m
+Next.js build worker exited with code: 1 and signal: null

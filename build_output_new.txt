@@ -1,0 +1,38 @@
+
+> smart-design-vault@0.1.0 build
+> NODE_ENV=production next build
+
+   ▲ Next.js 15.5.9
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 8.5s
+   Linting and checking validity of types ...
+ ⨯ ESLint: Converting circular structure to JSON     --> starting at object with constructor 'Object'     |     property 'configs' -> object with constructor 'Object'     |     property 'flat' -> object with constructor 'Object'     |     ...     |     property 'plugins' -> object with constructor 'Object'     --- property 'react' closes the circle Referenced from: /home/austin/Downloads/smart-design-vault/.eslintrc.json
+   Collecting page data ...
+   Generating static pages (0/11) ...
+   Generating static pages (2/11) 
+   Generating static pages (5/11) 
+   Generating static pages (8/11) 
+ ✓ Generating static pages (11/11)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                     102 kB         249 kB
+├ ○ /_not-found                            124 B         102 kB
+├ ○ /business-profile                    5.95 kB         165 kB
+├ ○ /clients                             3.21 kB         150 kB
+├ ○ /login                               6.59 kB         172 kB
+├ ○ /orders                              7.28 kB         191 kB
+├ ○ /select-role                         4.72 kB         140 kB
+├ ○ /services                            7.74 kB         170 kB
+└ ○ /settings                            7.93 kB         169 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-dc5f45a243dc3a80.js       45.6 kB
+  ├ chunks/4bd1b696-409494caf8c83275.js  54.2 kB
+  └ other shared chunks (total)          1.98 kB
+
+
+○  (Static)  prerendered as static content
+

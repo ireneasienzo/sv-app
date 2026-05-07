@@ -1,0 +1,24 @@
+
+> smart-design-vault@0.1.0 build
+> NODE_ENV=production next build
+
+   ▲ Next.js 15.5.9
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 8.0s
+   Linting and checking validity of types ...
+ ⨯ ESLint: Converting circular structure to JSON     --> starting at object with constructor 'Object'     |     property 'configs' -> object with constructor 'Object'     |     property 'flat' -> object with constructor 'Object'     |     ...     |     property 'plugins' -> object with constructor 'Object'     --- property 'react' closes the circle Referenced from: /home/austin/Downloads/smart-design-vault/.eslintrc.json
+Failed to compile.
+
+./src/utils/validation.ts:57:30
+Type error: Property 'MIN_AMOUNT' does not exist on type '{ readonly MIN_PRICE: 0; readonly MAX_PRICE: 999999999; readonly MIN_DESCRIPTION_LENGTH: 1; readonly MAX_DESCRIPTION_LENGTH: 1000; readonly MIN_SERVICE_NAME_LENGTH: 2; readonly MAX_SERVICE_NAME_LENGTH: 100; readonly MIN_PHONE_LENGTH: 10; readonly MAX_PHONE_LENGTH: 20; readonly PASSWORD_MIN_LENGTH: 6; }'.
+
+[0m [90m 55 |[39m   }
+ [90m 56 |[39m
+[31m[1m>[22m[39m[90m 57 |[39m   [36mif[39m (numAmount [33m<[39m [33mVALIDATION[39m[33m.[39m[33mMIN_AMOUNT[39m) {
+ [90m    |[39m                              [31m[1m^[22m[39m
+ [90m 58 |[39m     [36mreturn[39m { isValid[33m:[39m [36mfalse[39m[33m,[39m error[33m:[39m [33mERROR_MESSAGES[39m[33m.[39m[33mFORM[39m[33m.[39m[33mINVALID_PRICE[39m }[33m;[39m
+ [90m 59 |[39m   }
+ [90m 60 |[39m[0m
+Next.js build worker exited with code: 1 and signal: null

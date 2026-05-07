@@ -1,0 +1,15 @@
+ ⨯ ESLint: Converting circular structure to JSON     --> starting at object with constructor 'Object'     |     property 'configs' -> object with constructor 'Object'     |     property 'flat' -> object with constructor 'Object'     |     ...     |     property 'plugins' -> object with constructor 'Object'     --- property 'react' closes the circle Referenced from: /home/austin/Downloads/smart-design-vault/.eslintrc.json
+Failed to compile.
+
+./src/utils/validation.ts:54:57
+Type error: Property 'INVALID_AMOUNT' does not exist on type '{ readonly REQUIRED_FIELD: "This field is required"; readonly INVALID_PRICE: "Please enter a valid price"; readonly INVALID_EMAIL: "Please enter a valid email address"; readonly INVALID_PHONE: "Please enter a valid phone number"; readonly MIN_LENGTH: (min: number) => string; readonly MAX_LENGTH: (max: number) => str...'.
+
+[0m [90m 52 |[39m   
+ [90m 53 |[39m   [36mif[39m (isNaN(numAmount)) {
+[31m[1m>[22m[39m[90m 54 |[39m     [36mreturn[39m { isValid[33m:[39m [36mfalse[39m[33m,[39m error[33m:[39m [33mERROR_MESSAGES[39m[33m.[39m[33mFORM[39m[33m.[39m[33mINVALID_AMOUNT[39m }[33m;[39m
+ [90m    |[39m                                                         [31m[1m^[22m[39m
+ [90m 55 |[39m   }
+ [90m 56 |[39m
+ [90m 57 |[39m   [36mif[39m (numAmount [33m<[39m [33mVALIDATION[39m[33m.[39m[33mMIN_AMOUNT[39m) {[0m
+Next.js build worker exited with code: 1 and signal: null
+[?25h
